@@ -1,0 +1,30 @@
+{
+  "name": "13-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nuotaikos/13-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nuotaikos/13-app/issues"
+  },
+  "homepage": "https://github.com/Nuotaikos/13-app#readme",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "espress": "^0.0.0",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "mongoose": "^6.5.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
