@@ -6,15 +6,15 @@ router.get('/', (req, res) => { //kreipiames i routeri ir, kad apdirbti uzklausa
   // const todos = await Todo.find({})
 
   res.render('index', {   //kad vartotojui kazka grazinti, kreipiames i response. Render is express, kas renderina psl index.hbs
-    // title: 'Todos list',
-    // isIndex: true,
+    title: 'Todos list',
+    isIndex: true,
     // todos
   })
 })
 router.get('/create', (req, res) => {
   res.render('create', {
-    // title: 'Create todo',
-    // isCreate: true
+    title: 'Create todo',
+    isCreate: true
   })
 })
 
