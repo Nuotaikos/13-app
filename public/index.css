@@ -1,3 +1,8 @@
+/* body {
+  background: rgb(38,52,82);
+  background: linear-gradient(354deg, rgba(38,52,82,0.9953023445706407) 6%, rgba(109,198,183,1) 86%);
+  );
+} */
 .todo {
   margin-bottom: 1rem;
 }
