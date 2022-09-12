@@ -1,1 +1,24 @@
+{{!-- <form action="/create" method="POST">
+  <h2>Create todo</h2>
+
+  <div class="input-field">
+    <input type="text" name="title">
+    <label>Todo title</label>
+  </div>
+
+  <button type="submit" class="btn">Create</button>
+</form> --}}
+
+{{!-- siusime POST uzklausa kurti naujus elementus--}}
+<form action="/create" method="POST"> 
 <H2>Create todo</H2>
+
+<div class="input-field">
+  <input type="text" name="title"> 
+  {{!-- name, kad is serverio nuskaityti title parametra --}}
+  <label>Todo title</label>
+</div>
+
+<button type="submit" class="btn">Create</button>
+</form> 
+

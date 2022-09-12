@@ -1,1 +1,28 @@
-<h2>Index page - pagrindinis pulapis</h2>
+<h2>Todo list</h2>
+
+{{!-- klausiam pas handlebars, jei masyve todo.length kazkas yra, tada toliau renderinam todo sarasa, jei masyvas tuscia p zinute no todos --}}
+{{#if todos.length}}
+<ul>
+  {{#each todos}}
+  <li class="todo">
+    <form action="/complete" method="POST">
+      <label>
+        {{#if completed}} {{!--jei yra true, t.y. todo padarytas, tada atvaizduojame vizualiai su imputu ir span apacioje. Uzbraukiant title ir pazymint checkbox--}}
+        <input type="checkbox" checked name="completed">   {{!--jei yra true, priskiriam checked--}}
+        <span class="completed">{{title}}</span>
+        {{else}}
+        <input type="checkbox" name="completed">
+        <span>{{title}}</span>
+        {{/if}}
+
+        <input type="hidden" value="{{_id}}" name="id">  
+{{!-- //pasleptas inputas, kur value einantis id --}}
+        <button class="btn btn-small" type="submit">Save</button>
+      </label>
+    </form>
+  </li>
+  {{/each}}
+</ul>
+{{else}}
+<p>No todos!</p>
+{{/if}}
